@@ -1,0 +1,178 @@
+html, body {
+    width   : 100%;
+    height  : 100%;
+    margin  : 0;
+    display : flex;
+}
+
+/* container left */
+
+.container-left {
+    height    : 100%;
+    display   : flex;
+    flex-wrap : wrap;
+    flex      : 1;
+    z-index   : 2;
+}
+
+/* nav */
+
+nav {
+    width       : 100%;
+    height      : 70px;
+    padding     : 10px;
+    display     : flex;
+    font-family : Arial, Helvetica, sans-serif;
+}
+
+.logo {
+    widows : 50px;
+    height : 50px;
+    margin : auto;
+}
+
+ul {
+    width           : 100%;
+    display         : flex;
+    justify-content : space-evenly;
+    align-content   : center;
+}
+
+li {
+    width   : 100%;
+    height  : 25px;
+    margin  : auto;
+    display : flex;
+}
+
+li:hover {
+    color : #088;
+}
+
+li a {
+    width           : 100%;
+    color           :#666;
+    text-align      : center;
+    text-decoration : none;
+}
+li a:hover {
+    color : #088;
+}
+
+.active {
+    border-bottom : 2px solid #088;
+}
+.active a {
+    color : #088;
+}
+
+/* section */
+
+h1 {
+    width          : 100%;
+    margin         : 0;
+    font-family    : Arial, Helvetica, sans-serif;
+    text-transform : uppercase;
+    font-size      : 48px;
+}
+
+section {
+    width         : 80%;
+    height        : 60%;
+    margin        : auto;
+    align-content : center;
+}
+
+section p {
+    margin      : 0 0 50px 0;
+    font-family : Arial, Helvetica, sans-serif;
+}
+
+section a {
+    color           : #666;
+    text-decoration : none;
+    font-style      : italic;
+}
+
+/* form */
+
+form {
+    width   : 110%;
+    height  : 42px;
+    display : flex;
+}
+
+svg {
+    margin : 4 20 2 20;
+}
+
+.radius {
+    width            : 150%;
+    height           : 58px;
+    margin           : 10px;
+    border-radius    : 29px;
+    background-color : #fff;
+    box-shadow       : 0px 0px 50px 0px #cc8;
+}
+
+input {
+    width            : 80%;
+    height           : 58px;
+    border           : 0px solid;
+    font-size        : 18px;
+    background-color : transparent;
+}
+
+button {
+    width            : 150px;
+    height           : 50px;
+    margin           : 4px;
+    border           : 0px solid;
+    border-radius    : 29px;
+    text-align       : center;
+    background-color : #0f8;
+}
+
+.mdp {
+    width      : 100%;
+    text-align : center;
+}
+
+/* container right */
+
+.container-right {
+    display          : flex;
+    flex             : 1.5;
+    z-index          : 1;
+    background-image : url('../img/back.png');
+    background-size  : cover;
+}
+
+/*Adapter à la taille des écrans*/
+
+
+@media screen and (max-width: 1280px) {
+    /* CSS appliqué aux petits écrans */
+
+    button{
+        background-color: antiquewhite;
+    }
+ }
+
+ @media screen and (max-width: 768px) {
+    /* CSS appliqué aux petits écrans */
+
+    input{
+        background-color: #088;
+    }
+ }
+
+ @media screen and (max-width: 480px) {
+    /* CSS appliqué aux petits écrans */
+    .container-right{
+        display: none;
+    }
+    .container-left{
+        width: 100%;
+    }
+ }
