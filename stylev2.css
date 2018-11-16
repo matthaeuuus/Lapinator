@@ -86,15 +86,15 @@ body {
 }
 
 .container-left li a:hover {
-  color: #088;
+  color: #50e3c2;
 }
 
 .container-left .active {
-  border-bottom: 2px solid #088;
+  border-bottom: 2px solid #50e3c2;
 }
 
 .container-left .active a {
-  color: #088;
+  color: #50e3c2;
 }
 
 .container-left .icon {
@@ -216,7 +216,7 @@ body {
   text-align: center;
   -webkit-transition: 0.75s;
   transition: 0.75s;
-  background-color: #258391;
+  background-color: #50e3c2;
   font-family: 'Roboto', sans-serif;
   color: white;
   font-size: 15px;
